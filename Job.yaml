@@ -1,16 +1,16 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: batch-job
+  name: Job
 spec:
   completions: 2
   parallelism: 2
   template:
     metadata:
       labels: 
-        app: batch-job
+        app: Job
     spec:
       restartPolicy: OnFailure
       containers:
       - name: pi 
-        image: figent/batch-job
+        image: figent/Job
