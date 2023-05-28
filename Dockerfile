@@ -1,3 +1,3 @@
 FROM busybox
 
-ENTRYPOINT echo "$(date) Moringa Mock Batch job starting"; sleep 120; echo "$(date) Finished succesfully"
+ENTRYPOINT echo "$(date) Moringa Mock Batch job starting"; sleep 150; echo "$(date) Finished succesfully"
